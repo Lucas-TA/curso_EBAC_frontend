@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, a {
+    font-family: 'Bungee', sans-serif;
+}
+header, main, footer {
+    width: 100%;
+}
+header > .container {
+    background-color: #182C61;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header h1 {
+    color: white;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: .8em;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.container {
+    margin: 0 10%;
+}
