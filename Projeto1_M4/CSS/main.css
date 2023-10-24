@@ -3,34 +3,107 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, a {
+h2, h3, button {
+    color: #182C61;
+    font-weight: normal;
+}
+h1, h2, h3, a, button {
     font-family: 'Bungee', sans-serif;
 }
-header, main, footer {
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #182C61;
+    text-align: justify;
+}
+header, main, footer, section {
     width: 100%;
 }
-header > .container {
+header, footer {
     background-color: #182C61;
+    padding: 1em 0;
+}
+header > .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-header h1 {
-    color: white;
+header h1, .container > nav ul li a {
+    color: #ecf0f1;
 }
 nav ul {
     display: flex;
     flex-direction: row;
-    gap: .8em;
+    gap: 1em;
 }
 nav ul li {
     list-style: none;
 }
 nav ul li a {
-    text-decoration: none;
     text-transform: uppercase;
     color: white;
+    font-size: 1.2em;
 }
 .container {
     margin: 0 10%;
+}
+.banner > .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding-top: 1.5em;
+    margin-bottom: 2.1em;
+}
+.banner > .container p:last-child {
+    margin-bottom: 1em;
+}
+.contact > .container h2 {
+    padding: 1em 0;
+}
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12%;
+}
+.contact-details form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    gap: .6em;
+}
+.contact-details form input {
+    padding: .6em;
+}
+textarea {
+    resize: none;
+    padding: .4em;
+}
+.contact-details form button {
+    background-color:#182C61;
+    cursor: pointer;
+    color: #ecf0f1;
+    padding: .6em;
+    border: 0;
+    font-size: .8em;
+    font-weight: normal;
+}
+.contact-details form button:hover {
+    background-color:#4c71d6;
+}
+.address address p {
+    text-align: left;
+}
+footer {
+    padding: 1em 0;
+}
+footer > .container p {
+    color: #ecf0f1;
+    font-size: 1.05em;
+}
+.social a {
+    margin-left: 5px;
 }
