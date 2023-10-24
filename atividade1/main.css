@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body > header {
+    text-align: center;
+    background-color: antiquewhite;
+    border-bottom: 5px solid rgba(124, 56, 0, 0.411);
+    padding: 1em 0;
+}
+header h1 {
+    font-size: 3em;
+}
+h1, h2 {
+    color: rgb(184, 0, 0);
+}
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    list-style: none;
+}
+.main-menu ul li {
+    padding-top: .6em;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-menu a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+.esporte h2, .economia h2, .tecnologia h2, .entretenimento h2 {
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 30px;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+.esporte, .economia, .tecnologia, .entretenimento {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tecnologia {
+    background-color: rgb(182, 93, 241);
+    border-bottom: 4px solid rgb(81, 0, 128);
+}
+.entretenimento {
+    background-color: rgb(199, 248, 84);
+    border-bottom: 4px solid rgb(128, 119, 0);
+}
+.esporte {
+    background-color: rgb(113, 238, 113);
+    border-bottom: 4px solid green;
+}
+.economia {
+    background-color: rgb(81, 183, 241);
+    border-bottom: 4px solid rgb(0, 60, 128);
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+.articles article {
+    max-width: 320px;
+    min-width:260px ;
+    width: 30%;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.815);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.555);
+}
+.articles article p {
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+.articles article img {
+    height: 150px;
+    max-width: 90%;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.925);
+}
+.articles article a {
+    padding: .8em;
+    background-color: rgba(3, 3, 99, 0.952);
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.863);
+}
+.articles article a:hover {
+    background-color: rgba(56, 56, 134, 0.952);
+}
+.economy {
+    background-color: aquamarine;
+}
