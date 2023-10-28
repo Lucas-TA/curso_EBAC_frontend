@@ -13,7 +13,7 @@ function calculate() {
         resultContainer.classList.remove('incorrect');
         resultContainer.classList.add('correct');
         resultContainer.style.display = 'block';
-        resultContainer.innerHTML = `do ano ${parseInt(anoInicial.value)} até o ano ${parseInt(anoAtual.value)} se passaram ${res} anparseInt(anoAtual.value)os` ;
+        resultContainer.innerHTML = `do ano ${parseInt(anoInicial.value)} até o ano ${parseInt(anoAtual.value)} se passaram ${res} anos` ;
 
         anoInicial.value = '';
         anoAtual.value = '';
