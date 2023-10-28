@@ -50,6 +50,11 @@ form button:hover {
     display: none;
     padding: 1em;
     width: 100%;
-    background-color: blueviolet;
     color: white;
+}
+.correct {
+    background-color: blueviolet;
+}
+.incorrect {
+    background-color: rgb(126, 0, 0);
 }

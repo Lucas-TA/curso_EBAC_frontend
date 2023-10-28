@@ -1,21 +1,33 @@
-let anoInicial = document.querySelector('#ano_inicial').value;
-let anoAtual = document.querySelector('#ano_atual').value;
-let btn = document.getElementById('btn');
+let anoInicial = document.getElementById('ano_inicial');
+let anoAtual = document.getElementById('ano_atual');
+let button = document.getElementById('btn');
 let resultContainer = document.getElementById('result')
 
-const verificaAno = () => {anoInicial > anoAtual};
+const validation = () => { 
+    return parseInt(anoAtual.value) >= parseInt(anoInicial.value) 
+}
 
-function calculaAno(anoInicial, anoAtual) {
-    if (verificaAno()) {
-        const res = anoAtual - anoInicial;
-        return console.log(res)
+function calculate() {
+    if(validation()) {
+        const res = parseInt(anoAtual.value) - parseInt(anoInicial.value);
+        resultContainer.classList.remove('incorrect');
+        resultContainer.classList.add('correct');
+        resultContainer.style.display = 'block';
+        resultContainer.innerHTML = `do ano ${parseInt(anoInicial.value)} até o ano ${parseInt(anoAtual.value)} se passaram ${res} anparseInt(anoAtual.value)os` ;
+
+        anoInicial.value = '';
+        anoAtual.value = '';
     } else {
-        resultContainer.style.display='block';
-        resultContainer.innerHTML= `O número Atual deve ser maior que o número Inicial`;
+        resultContainer.classList.remove('correct');
+        resultContainer.classList.add('incorrect');
+        resultContainer.style.display = 'block';
+        resultContainer.innerHTML = `Ano Final deve ser maior que ano inicial!` ;
+
+        anoInicial.value = '';
+        anoAtual.value = '';
     }
 }
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    calculaAno(anoInicial, anoAtual);
-
+button.addEventListener('click', (e) => {
+    e.preventDefault()
+    calculate()
 })
