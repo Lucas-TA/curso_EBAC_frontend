@@ -21,7 +21,7 @@ function calculate() {
         resultContainer.classList.remove('correct');
         resultContainer.classList.add('incorrect');
         resultContainer.style.display = 'block';
-        resultContainer.innerHTML = `Ano Final deve ser maior que ano inicial!` ;
+        resultContainer.innerHTML = `Ano sinal deve ser maior que ano inicial!` ;
 
         anoInicial.value = '';
         anoAtual.value = '';
