@@ -18,6 +18,7 @@ header button {
     margin-left: 16px;
 }
 form {
+    display: none;
     background-color: #c8d6e5;
     padding: 24px 0;
     text-align: center;
@@ -39,4 +40,40 @@ button {
 }
 .cancel-button {
     background-color: red;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    height: 200px;
+    width: 250px;
+    list-style: none;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+ul li img {
+    height: 100%;
+    width: 100%;
+}
+.overlay-imagem-link {
+    opacity: 0;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
+.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+.overlay-imagem-link a:hover {
+    text-decoration: underline;
 }
