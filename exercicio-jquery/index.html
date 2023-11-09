@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="title" id="title">
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form class="form-add" id="_form_add">
+            <div class="form-input-container">
+                <input 
+                type="text" 
+                id="_input_item"
+                placeholder="Escreva sua tarefa aqui"
+            >
+            <button 
+                type="submit" 
+                id="_button_add" 
+                class="add-button"
+            >
+            Adicionar
+            </button>
+            </div>
+            <div class="error-message" id="error_message"></div>
+        </form>
+        <ul id="_main_ul">
+            <ul class="item-container">
+                <li class="initial_templete">List is empty</li>
+            </ul>
+            <hr>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

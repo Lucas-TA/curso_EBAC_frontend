@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+body {
+    background-color: bisque;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 2em;
+    min-height: 50%;
+    background-color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 5%);
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.692);
+}
+form {
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-input-container {
+    display: flex;
+}
+form input {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: .5em;
+    outline: none;
+    font-size: 1.2em;
+}
+.add-button {
+    width: 80px;
+    height: 36px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    background-color: brown;
+    color: #fff;
+    cursor: pointer;
+}
+.add-button:hover, .delete-button:hover {
+    background-color: rgb(202, 43, 43);
+}
+ul {
+    width: 100%;
+}
+ul li{
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.item-container {
+    display: flex;
+}
+.delete-button {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(153, 0, 0);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.error-message p{
+    color: red;
+    font-size: .9em;
+}
+.initial_template {
+    font-size: .6em;
+    color: rgb(82, 82, 82);
+}
+.riscado {
+    text-decoration: line-through;
+}
