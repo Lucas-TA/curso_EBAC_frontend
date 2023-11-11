@@ -33,4 +33,13 @@ $(document).ready(() => {
             telefone: "Telefone inválido",
         }
     })
+    $('.lista-veiculos button').click(() => {
+        const destino = $('#contato');
+        const nomeVeiculo = $(this).parent().find('h3').text();
+
+        $('#veiculo').val(nomeVeiculo)
+        $('html').animate({
+            scrollTop:destino.offset().top
+        }, 700)
+    })
 })
