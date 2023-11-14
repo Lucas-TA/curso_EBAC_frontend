@@ -23,15 +23,24 @@ button {
     border: 0;
     outline: none;
 }
+body {
+    background-color: rgb(141, 141, 141);
+}
 .container {
     max-width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
 }
 .dados-pessoais {
     margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    background-color: rgb(201, 201, 201);
 }
 .dados-pessoais, .endereco {
     display: flex;
@@ -42,9 +51,6 @@ button {
     flex-direction: column;
     justify-content: center;
 }
-.cpf-class {
-    width: 180px;
-}
 .half {
     display: flex;
     flex-direction: row;
@@ -53,4 +59,5 @@ button {
     text-align: center;
     padding: 5px;
     gap: 5px;
+    width: 100%;
 }
