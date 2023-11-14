@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio Plugins JQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -15,28 +18,28 @@
             <div class="dados-pessoais">
                 <h2>Dados Pessoais</h2>
                 <label for="input_name">Nome Completo:</label>
-                <input type="text" name="name" id="input_name">
+                <input type="text" name="name" id="input_name" required>
                 <label for="email_input">E-mail:</label>
-                <input type="text" name="email" id="email_input">
+                <input type="text" name="email" id="email_input" required>
                 <div class="half">
                     <label for="tel_input">Telefone:</label>
-                    <input type="number" name="tel" id="tel_input" class="cpf-class">
+                    <input type="text" name="tel" id="tel_input" class="cpf-class" required>
                     <label for="cpf_input">CPF:</label>
-                    <input type="number" name="cpf" id="cpf_input" class="cpf-class">
+                    <input type="text" name="cpf" id="cpf_input" class="cpf-class" required>
                 </div>
             </div>
             <div class="endereco">
                 <h2>Endereço:</h2>
                 <div class="endereco-rua">
                     <label for="street_input">Rua:</label>
-                    <input type="text" name="street" id="street_input">
+                    <input type="text" name="street" id="street_input" required>
                     <label for="bairro_input">Bairro:</label>
-                    <input type="text" name="bairro" id="bairro_input">
+                    <input type="text" name="bairro" id="bairro_input" required>
                     <div class="half">
                         <label for="house_number_input">Número:</label>
-                        <input type="number" name="houseNum" id="house_number_input">
+                        <input type="text" name="houseNum" id="house_number_input" required>
                         <label for="cep_input">CEP:</label>
-                        <input type="number" name="cep" id="cep_input">
+                        <input type="text" name="cep" id="cep_input" required>
                     </div>
                 </div>
             </div>
@@ -44,7 +47,7 @@
         </form>
     </div><!-- container -->
 
-    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./scripts/jquery.mask.min.js"></script>
     <script src="./scripts/jquery.validate.min.js"></script>
     <script src="./scripts/messages_pt_BR.min.js"></script>
