@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Plugins JQuery</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+        <form>
+            <div class="dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="name" id="input_name">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email_input">
+                <div class="half">
+                    <label for="tel">Telefone:</label>
+                    <input type="number" name="tel" id="tel_input" class="cpf-class">
+                    <label for="cpf">CPF:</label>
+                    <input type="number" name="cpf" id="cpf_input" class="cpf-class">
+                </div>
+            </div>
+            <div class="endereco">
+                <h2>Endereço:</h2>
+                <div class="endereco-rua">
+                    <label for="street">Rua:</label>
+                    <input type="text" name="street" id="street_input">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro_input">
+                    <div class="half">
+                        <label for="houseNum">Número:</label>
+                        <input type="number" name="houseNum" id="house_number_input">
+                        <label for="cep">CEP:</label>
+                        <input type="number" name="cep" id="cep_input">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
