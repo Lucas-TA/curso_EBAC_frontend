@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+input {
+    height: 30px;
+}
+h1, h2 {
+    padding: .5em 0;
+    text-align: center;
+}
+label, h2, h1, button {
+    text-transform: uppercase;
+}
+label {
+    margin-top: 5px;
+    font-weight: bold;
+}
+button {
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    border: 0;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: rgb(34, 33, 33);
+}
+body {
+    background-color: rgb(141, 141, 141);
+}
+.container {
+    max-width: 90%;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 3em 0;
+}
+.dados-pessoais, .endereco {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    background-color: rgb(201, 201, 201);
+}
+.dados-pessoais, .endereco {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.endereco-rua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.half {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+.half input {
+    max-width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        padding-top: 7em;
+    }
+    .half {
+        flex-direction: column;
+        align-items: start;
+    }
+    .half input {
+        width: 100%;
+    }
+}
