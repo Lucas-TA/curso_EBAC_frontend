@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    max-width: 500px;
+}
+body {
+    padding: 2em;
+}
+#preco > p {
+    width: 300px;
+}
+time {
+    display: block;
+}
+.post {
+    margin-bottom: 24px;
+}
