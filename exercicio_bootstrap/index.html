@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col form-col bg-dark p-md-4 rounded">
+                <h1 class="text-center text-light">Cadastro do Cliente</h1>
+                <form>
+                    <label class="form-check-label text-light fw-bold" for="name">Seu nome:</label>
+                    <input class="form-control" type="text" id="name" required>
+                    <label class="form-check-label text-light fw-bold" for="email">Seu E-mail:</label>
+                    <input class="form-control" type="text" id="email" required>
+                    <label class="form-check-label text-light fw-bold" for="tel">Seu Telefone:</label>
+                    <input class="form-control" type="text" id="tel" required>
+                    <button class="btn btn-success mt-3 text-light fw-bold w-100" type="submit">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
