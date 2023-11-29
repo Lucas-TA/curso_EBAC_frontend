@@ -1,0 +1,17 @@
+@use './config/reset.scss';
+@use './config/variables.scss';
+@use './sections/produtos.scss';
+@use './sections/header.scss';
+
+body {
+    background-color: variables.$bg-color;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
