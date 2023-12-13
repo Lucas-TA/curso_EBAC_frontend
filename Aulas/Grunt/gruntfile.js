@@ -1,3 +1,5 @@
+const { option } = require("grunt");
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -22,9 +24,22 @@ module.exports = function(grunt) {
                 tasks: ['less:development']
             }
         },
+        replace: {
+            dev: {
+                options: {
+                    patterns: [
+                        {
+                            match:'ENDERECO_DO_CSS',
+                            replacement: './styles/main.css'
+                        }
+                    ]
+                }
+            }
+        },
     })
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-replace')
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['less:production']);
