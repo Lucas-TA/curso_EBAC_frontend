@@ -63,6 +63,7 @@ module.exports = function(grunt) {
                             replacement: './scripts/main.min.js'
                         },
                     ]
+                    
                 },
                 files: [
                     {
