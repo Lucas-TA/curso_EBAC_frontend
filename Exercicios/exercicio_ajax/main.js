@@ -8,15 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const quantityFollowers = document.getElementById('quantityFollowers');
     const quantityFollowing = document.getElementById('quantityFollowing');
 
+    const searchForm = document.getElementById('searchForm');
+
+    const errorMessage = document.getElementById('errorMessage')
+    
+
     const linkButton = document.getElementById('linkButton');
 
-    const url = 'https://api.github.com/users/lucas-ta';
+    searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    fetch(url)
+        const searchInput = document.getElementById('searchInput');
+        const url = `https://api.github.com/users/${searchInput.value}`;
+
+        fetch(url)
         .then( res => {
+            if (!res.ok) {
+                searchInput.classList.add('error-status')
+                errorMessage.classList.remove('hidden')
+                throw new Error("Não foi possível encontrar este usuário. Por favor tente novamente.")
+            }
             return res.json();
         })
         .then( json => {
+
+            searchInput.classList.remove('error-status')
+            errorMessage.classList.add('hidden')
+
             profileAvatar.src = json.avatar_url;
 
             profileName.innerText = json.name;
@@ -27,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             quantityFollowing.innerText = json.following;
 
             linkButton.href = json.html_url;
-
         })
+        .catch( function(error) {
+            alert("Ops! Ocorreu um erro durante a requisição das informações, tente novamente mais tarde.")
+        })
+    })
 })
