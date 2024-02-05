@@ -9,6 +9,16 @@
 </head>
 <body>
     <header>
+        <div class="search-container">
+            <form id="searchForm">
+                <label for="searchInput" class="search-title">Localize o perfil no Github</label>
+                <input type="text" id="searchInput" placeholder="Digite o nome de usuário" class="search-input" required>
+                <button type="submit" class="search-button" id="searchButton">Procurar</button>
+                <span id="errorMessage" class="error-status-message hidden">
+                    Não foi possível encontrar este usuário. Por favor tente novamente.
+                </span>
+            </form>
+        </div>
         <div class="container">
             <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt="." id="profileAvatar">
             <h1 class="profile-name" id="profileName"></h1>
@@ -30,7 +40,6 @@
             <a href="#" class="profile-link" id="linkButton">Ver no Github</a>
         </div>
     </header>
-
     <script src="main.js"></script>
 </body>
 </html>

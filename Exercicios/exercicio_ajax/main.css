@@ -2,7 +2,6 @@
     --header-color: #01a3a4;
     --bg-color: #eee;
 }
-
 * {
     font-family: sans-serif;
     margin: 0;
@@ -69,4 +68,46 @@ header .container {
 
 .numbers-item h4 {
     font-size: .3em;
+}
+
+
+.search-container {
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+.search-container > form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.search-title {
+    background-color: rgb(184, 233, 255);
+    padding: 1em;
+    font-weight: bold;
+}
+.search-input {
+    height: 40px;
+    text-align: center;
+    border: none;
+}
+.search-button {
+    border: none;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(81, 81, 250);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.error-status {
+    color: red;
+    border: 1px solid red;
+}
+.error-status-message {
+    color: red;
+    font-size: 9px;
 }
