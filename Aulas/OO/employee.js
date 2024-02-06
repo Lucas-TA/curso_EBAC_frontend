@@ -1,47 +1,36 @@
 function Person(name) {
-    this.name = name;
-    this.sayHi = function() {
-        console.log(this.name + " Hi!")
-    }
+    this.name = name; 
 }
 
-function Employee(name, role, sallary) {
+function Employee(name, role, sallary) { // Objeto( atri, butos )
     this.role = role;
+
     let _sallary = sallary;
 
-    //getters
-    this.getSallary = function() {
+
+    //getter
+    this.getSallary = function() { //método
         return _sallary
     }
 
-    //setters
+    //setter
     this.setSallary = function(value) {
         if (typeof value === 'number') {
             _sallary = value
         }
     }
 
-    this.payRaise = function() {
+    this.annualPayRaise = function() {
         const newSallary = _sallary * 1.1;
         _sallary = newSallary;
     }
 
-    Person.call(this, name);
+    Person.call(this, name) //herança
 }
 
-function Trainee(name) {
-    Employee.call(this, name, "Trainee", 2000);
-    this.payRaise = function() {
-        const newSallary = this.getSallary() * 1.07;
-        this.setSallary(newSallary);
-    }
-}
 
-const employee1 = new Employee("Maria", "Front-End Developer", 5000);
-const employee2 = new Trainee("Pedro");
-employee1.sayHi();
+const employee1 = new Employee("Maria", "Dev Backend", 5400);
 
-employee1.payRaise();
+//employee1.annualPayRaise();
+employee1.setSallary(8000); //
 console.log(employee1.getSallary())
-employee2.payRaise();
-console.log(employee2.getSallary())
